@@ -16,7 +16,7 @@ import plotly.express as px
 
 #st.dataframe(df)
 
-books_df = pd.read_csv("data/bestsellers_with_categories_2022_03_27.csv")
+books_df = pd.read_csv("bestsellers_with_categories_2022_03_27.csv")
 
 
 st.title("Bestselling Book Anlysis")
@@ -45,7 +45,7 @@ if submit_button:
     }
 
     books_df = pd.concat([pd.DataFrame(new_data,index=[0]),books_df],ignore_index=True)
-    books_df.to_csv("data/bestsellers_with_categories_2022_03_27.csv",index=False)
+    books_df.to_csv("bestsellers_with_categories_2022_03_27.csv",index=False)
     st.sidebar.success("New book Added succsefuly")
 #Summyary statistics
 st.subheader("Summery statistics")
