@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-from modul16 import submit_button
 
 #f = pd.DataFrame({
 #    "Name":["Esmir","Darko","Timur"],
